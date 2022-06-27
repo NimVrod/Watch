@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Watch by NimVrod</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script defer src="assets/calc.js"></script>
+
+
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><button onclick="changetime(Date.UTC(2023, 12, 24, 12, 0, 0, 0))">Christmas</button></li>
+
+            <li>
+                <input type="datetime-local" id="time">
+                <button onclick="changetime(new Date(document.getElementById('time').value))">Set</button>
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div id="watch">
+            <div class="container">
+                <div class="number-container"><div class="pie" style="--p: 0;--b:10px; --c: darkblue;"><span class="number" id="days"></span></div></div>
+                <div class="number-container"><div class="pie" style="--p: 0;--b:10px; --c: orange"><span class="number" id="hours"></span></div></div>
+                <div class="number-container"><div class="pie" style="--p: 0;--b:10px; --c: yellow"><span class="number" id="minutes"></span></div></div>
+                <div class="number-container"><div class="pie" style="--p: 0;--b:10px"><span class="number" id="seconds"></span></div></div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
